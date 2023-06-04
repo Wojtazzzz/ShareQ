@@ -1,9 +1,9 @@
 <p align="center">
- <h2 align="center">ShareQ App</h2>
+ <h1 align="center">ShareQ App</h2>
  <p align="center">Askfm-Clone is an application that allows users to register an account and receive anonymous questions.</p>
 </p>
 
-## Used Technologies
+### Used Technologies
 
 - Next.js
 - React
@@ -11,7 +11,7 @@
 - Nest.js
 - Cypress
 
-## Installation Instructions
+### Installation Instructions
 
 To install the application locally, follow these steps:
 
@@ -21,7 +21,7 @@ To install the application locally, follow these steps:
 4. Install the dependencies for the backend: `cd ../server` and run `npm install`
 5. Start the application: `npm run dev`
 
-## License
+### License
 
 This project is licensed under the MIT License. For more information, please see the [LICENSE](LICENSE) file.
 
