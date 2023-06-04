@@ -1,6 +1,6 @@
 <p align="center">
  <h1 align="center">ShareQ App</h2>
- <p align="center">Askfm-Clone is an application that allows users to register an account and receive anonymous questions.</p>
+ <p align="center">ShareQ is an application that allows users to register an account and receive anonymous questions.</p>
 </p>
 
 ### Used Technologies
@@ -15,8 +15,8 @@
 
 To install the application locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-account/Askfm-Clone.git`
-2. Navigate to the project directory: `cd Askfm-Clone`
+1. Clone the repository: `git clone https://github.com/Wojtazzzz/ShareQ.git`
+2. Navigate to the project directory: `cd ShareQ`
 3. Install the dependencies for the frontend: `cd client` and run `npm install`
 4. Install the dependencies for the backend: `cd ../server` and run `npm install`
 5. Start the application: `npm run dev`
