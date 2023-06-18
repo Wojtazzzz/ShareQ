@@ -1,0 +1,14 @@
+[
+	{
+		"label": "Random profile",
+		"link": "/random-profile"
+	},
+	{
+		"label": "About",
+		"link": "/about"
+	},
+	{
+		"label": "Rules",
+		"link": "/rules"
+	}
+]
