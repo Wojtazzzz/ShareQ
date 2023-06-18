@@ -6,11 +6,11 @@ import { LinkAsButton } from '../LinkAsButton';
 
 export const Navigation = () => {
 	return (
-		<nav className="bg-secondary-base">
+		<nav className="bg-secondary-base" aria-label="Main navigation">
 			<div className="mx-auto px-4 py-5 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8">
 				<div className="relative flex items-center justify-between">
 					<div className="flex items-center">
-						<Link href="/" aria-label="ShareQ" className="px-2 py-1">
+						<Link href="/" className="px-2 py-1">
 							<h1 className="text-xl font-bold uppercase tracking-wide text-gray-100">
 								ShareQ
 							</h1>
