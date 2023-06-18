@@ -18,10 +18,10 @@ export const LinkAsButton = ({
 		<Link
 			href={link}
 			className={clsx(
-				'w-full rounded-md px-5 py-3 text-center font-medium tracking-wide text-gray-100 transition-colors ease-in active:bg-primary-base/70',
+				'w-full rounded-md px-5 py-3 text-center font-medium tracking-wide text-gray-100 transition-colors ease-in active:bg-primary-dark/70',
 				{
-					'hover:bg-primary-base hover:shadow-md': variant === 'outline',
-					'bg-primary-base shadow-md hover:bg-primary-base/80':
+					'hover:bg-primary-dark hover:shadow-md': variant === 'outline',
+					'bg-primary-dark shadow-md hover:bg-primary-dark/80':
 						variant === 'base',
 				}
 			)}
