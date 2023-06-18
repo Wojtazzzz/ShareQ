@@ -5,9 +5,15 @@ type LinkAsButtonProps = {
 	link: string;
 	label: string;
 	variant: 'base' | 'outline';
+	onClick?: () => void;
 };
 
-export const LinkAsButton = ({ link, label, variant }: LinkAsButtonProps) => {
+export const LinkAsButton = ({
+	link,
+	label,
+	variant,
+	onClick = null,
+}: LinkAsButtonProps) => {
 	return (
 		<Link
 			href={link}
@@ -19,6 +25,7 @@ export const LinkAsButton = ({ link, label, variant }: LinkAsButtonProps) => {
 						variant === 'base',
 				}
 			)}
+			onClick={onClick}
 		>
 			{label}
 		</Link>

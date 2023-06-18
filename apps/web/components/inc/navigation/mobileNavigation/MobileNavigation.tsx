@@ -40,16 +40,29 @@ export const MobileNavigation = () => {
 						<ul role="list" className="w-full space-y-4">
 							{links.map(({ link, label }, key) => (
 								<li key={key}>
-									<NavItem link={link} label={label} />
+									<NavItem
+										link={link}
+										label={label}
+										onClick={closeNavigation}
+									/>
 								</li>
 							))}
 
 							<li>
-								<NavItem link="/" label="Sign in" />
+								<NavItem
+									link="/sign-in"
+									label="Sign in"
+									onClick={closeNavigation}
+								/>
 							</li>
 
 							<li className="flex">
-								<LinkAsButton link="/" label="Sign up" variant="base" />
+								<LinkAsButton
+									link="/sign-up"
+									label="Sign up"
+									variant="base"
+									onClick={closeNavigation}
+								/>
 							</li>
 						</ul>
 					</div>
