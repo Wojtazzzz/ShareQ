@@ -1,14 +1,14 @@
 [
 	{
 		"label": "Random profile",
-		"link": "/"
+		"link": "/random-profile"
 	},
 	{
 		"label": "About",
-		"link": "/"
+		"link": "/about"
 	},
 	{
 		"label": "Rules",
-		"link": "/"
+		"link": "/rules"
 	}
 ]

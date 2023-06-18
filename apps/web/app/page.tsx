@@ -1,9 +1,3 @@
-import { Header } from 'ui';
-
 export default function Page() {
-	return (
-		<>
-			<Header text="Web" />
-		</>
-	);
+	return <h2>Home page</h2>;
 }

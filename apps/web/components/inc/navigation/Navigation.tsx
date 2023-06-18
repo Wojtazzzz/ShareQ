@@ -30,10 +30,10 @@ export const Navigation = () => {
 
 					<ul role="list" className="hidden items-center space-x-2 lg:flex">
 						<li>
-							<LinkAsButton link="/" label="Sign in" variant="outline" />
+							<LinkAsButton link="/sign-in" label="Sign in" variant="outline" />
 						</li>
 						<li>
-							<LinkAsButton link="/" label="Sign up" variant="base" />
+							<LinkAsButton link="/sign-up" label="Sign up" variant="base" />
 						</li>
 					</ul>
 
