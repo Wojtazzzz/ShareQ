@@ -1,9 +1,16 @@
 import type { ReactNode } from 'react';
+import '../styles/tailwind.css';
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+type RootLayoutProps = {
+	children: ReactNode;
+};
+
+export default function RootLayout({ children }: RootLayoutProps) {
 	return (
 		<html lang="pl">
-			<body>{children}</body>
+			<body className="bg-black">
+				<div className="h-screen w-screen bg-red-400">{children}</div>
+			</body>
 		</html>
 	);
 }
