@@ -4,6 +4,7 @@ import { NavItem } from '../NavItem';
 import { useMobileNavigation } from './useMobileNavigation';
 import links from '../links.json';
 import Link from 'next/link';
+import { LinkAsButton } from '../../LinkAsButton';
 
 export const MobileNavigation = () => {
 	const { isNavigationActive, openNavigation, closeNavigation } =
@@ -63,30 +64,21 @@ export const MobileNavigation = () => {
 									</button>
 								</div>
 							</div>
-							<nav>
-								<ul className="space-y-4">
-									{links.map(({ link, label }, key) => (
-										<li key={key}>
-											<NavItem link={link} label={label} />
-										</li>
-									))}
-
-									<li>
-										<NavItem link="/" label="Sign in" />
+							<ul role="list" className="w-full space-y-4">
+								{links.map(({ link, label }, key) => (
+									<li key={key}>
+										<NavItem link={link} label={label} />
 									</li>
+								))}
 
-									<li>
-										<a
-											href="/"
-											className="bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline inline-flex h-12 w-full items-center justify-center rounded px-6 font-medium tracking-wide text-white shadow-md transition duration-200 focus:outline-none"
-											aria-label="Sign up"
-											title="Sign up"
-										>
-											Sign up
-										</a>
-									</li>
-								</ul>
-							</nav>
+								<li>
+									<NavItem link="/" label="Sign in" />
+								</li>
+
+								<li className="flex">
+									<LinkAsButton link="/" label="Sign up" variant="base" />
+								</li>
+							</ul>
 						</div>
 					</div>
 

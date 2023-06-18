@@ -9,10 +9,10 @@ type RootLayoutProps = {
 export default function RootLayout({ children }: RootLayoutProps) {
 	return (
 		<html lang="pl">
-			<body className="bg-black">
+			<body>
 				<Navigation />
 
-				<div className="h-screen w-screen bg-red-400">{children}</div>
+				<main>{children}</main>
 			</body>
 		</html>
 	);

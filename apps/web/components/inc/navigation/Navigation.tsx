@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { NavItem } from './NavItem';
 import links from './links.json';
 import { MobileNavigation } from './mobileNavigation/MobileNavigation';
+import { LinkAsButton } from '../LinkAsButton';
 
 export const Navigation = () => {
 	return (
@@ -27,26 +28,12 @@ export const Navigation = () => {
 						</ul>
 					</div>
 
-					<ul role="list" className="hidden items-center space-x-8 lg:flex">
+					<ul role="list" className="hidden items-center space-x-2 lg:flex">
 						<li>
-							<a
-								href="/"
-								aria-label="Sign in"
-								title="Sign in"
-								className="hover:text-teal-accent-400 font-medium tracking-wide text-gray-100 transition-colors duration-200"
-							>
-								Sign in
-							</a>
+							<LinkAsButton link="/" label="Sign in" variant="outline" />
 						</li>
 						<li>
-							<a
-								href="/"
-								className="bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline inline-flex h-12 items-center justify-center rounded px-6 font-medium tracking-wide text-white shadow-md transition duration-200 focus:outline-none"
-								aria-label="Sign up"
-								title="Sign up"
-							>
-								Sign up
-							</a>
+							<LinkAsButton link="/" label="Sign up" variant="base" />
 						</li>
 					</ul>
 
